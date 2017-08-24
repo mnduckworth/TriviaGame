@@ -28,7 +28,7 @@ $(document).ready(function(){
 	["Idiot", "Jonathan Davis", "Todd Vanderhood", "Brian Warner"],
 	["God Hates Us All", "Divine Intervention"," Christ Illusion", "Diabolus in Musica"],
 	["Warrant", "Faster Pussycat", "Guns N' Roses", "Motley Crue"],
-	["Iron Maiden's Bruce Dickinson", "Juda Priest's Rob Halford", "Danzig's Glenn Danzig", "Accept's Udo Dirkchneider"],
+	["Iron Maiden's Bruce Dickinson", "Judas Priest's Rob Halford", "Danzig's Glenn Danzig", "Accept's Udo Dirkchneider"],
 	["Frankie", "Jason", "Eddie", "Freddie"],
 	["Cliff Burton", "Vince Neilsmith", "Jason Nesmith", "Frank Carlton Serafino Ferana, Jr"],
 	["Twisted Sister", "Armored Saint", "Halestorm", "Alice Cooper"],
@@ -120,6 +120,7 @@ $(document).ready(function(){
 		numberCorrect = 0;
 		notAnswered = 0;
 		questionCount = 0;
+		countDown = 30;
 		questionSelection();
 	})
 })
