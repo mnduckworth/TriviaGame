@@ -1,6 +1,23 @@
 body{
 	text-align: center;
+	background-image: url("../images/Background.jpg");
+	color: white;
+	font-family: 'Metal Mania', cursive;
 }
 #start-game{
 	margin-top: 100px;
+}
+.container{
+	background-color: black;
+}
+p{
+	font-size: 30px;
+}
+h1{
+	font-size: 100px
+}
+img{
+	height: 250px;
+	width: 400px;
+	margin-bottom: 30px;
 }

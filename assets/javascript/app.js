@@ -34,7 +34,19 @@ $(document).ready(function(){
 	["Twisted Sister", "Armored Saint", "Halestorm", "Alice Cooper"],
 	["Dethklok", "Billy and the Destroyers", "Watchtower", "Snakes N'Barrels"]
 	];
+	var images = [
+	"<img src='assets/images/LambofGod.jpg'>",
+	"<img src='assets/images/BrianWarner.jpg'>",
+	"<img src='assets/images/Slayer.jpg'>",
+	"<img src='assets/images/GunsNRoses.jpg'>",
+	"<img src='assets/images/JudasPriest.jpg'>",
+	"<img src='assets/images/IronMaiden.jpg'>",
+	"<img src='assets/images/MotleyCrue.jpg'>",
+	"<img src='assets/images/Halestorm.jpg'>",
+	"<img src='assets/images/Dethklok.jpg'>"
+	]
 	function questionSelection(){
+		$("#images").empty();
 		$("#start-button").empty();
 		$("#timer").html("Time Left " + countDown + " Seconds.")
 		$("#question").html(questions[questionCount]);
@@ -60,6 +72,7 @@ $(document).ready(function(){
 		$("#thirdAnswer").empty();
 		$("#fourthAnswer").empty();
 		$("#question").html("That was Incorrect. The correct Answer was: " + correctAnswers[questionCount] + ".");
+		$("#images").html(images[questionCount]);
 		numberIncorrect++;
 		setTimeout(nextQuestion, 5000);
 	}
@@ -69,6 +82,7 @@ $(document).ready(function(){
 		$("#thirdAnswer").empty();
 		$("#fourthAnswer").empty();
 		$("#question").html("That was Right! The correct Answer was: " + correctAnswers[questionCount] + ".");
+		$("#images").html(images[questionCount]);
 		numberCorrect++;
 		setTimeout(nextQuestion, 5000);
 	}
@@ -78,6 +92,7 @@ $(document).ready(function(){
 		$("#thirdAnswer").empty();
 		$("#fourthAnswer").empty();
 		$("#question").html("You didn't answer in time. The correct Answer was: " + correctAnswers[questionCount] + ".");
+		$("#images").html(images[questionCount]);
 		notAnswered++;
 		setTimeout(nextQuestion, 5000);
 	}
@@ -92,6 +107,7 @@ $(document).ready(function(){
 		}
 	}
 	function finalScreen(){
+		$("#images").empty();
 		$("#timer").empty();
 		$("#fourthAnswer").empty();
 		$("#question").html("Here's How You Did:")
